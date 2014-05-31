@@ -15,8 +15,7 @@ public class MainActivity extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		TextView v = (TextView)getLayoutInflater().inflate(R.id.intro, null);
-		v.setTypeface(Typeface.createFromAsset(mgr, path));
+	
 		
 	}
 	

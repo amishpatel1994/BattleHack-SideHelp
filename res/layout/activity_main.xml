@@ -14,4 +14,13 @@
         android:textSize="@dimen/intro_text_size"
         android:gravity="center"/>
     
+    <Button 
+        android:id="@+id/for_shelter"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/shelter_button_text"
+        android:layout_below="@id/intro"
+        android:layout_marginTop="150dp"
+        android:background="@color/DarkCyan"/>
+    
 </RelativeLayout>

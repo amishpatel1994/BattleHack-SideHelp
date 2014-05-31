@@ -7,6 +7,7 @@
     tools:ignore="MergeRootFrame" >
 
     <TextView 
+        android:id="@+id/intro"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/into_text"

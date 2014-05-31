@@ -10,6 +10,7 @@
         android:id="@+id/intro"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
         android:text="@string/into_text"
         android:textSize="@dimen/intro_text_size"
         android:gravity="center"/>
@@ -22,5 +23,15 @@
         android:layout_below="@id/intro"
         android:layout_marginTop="150dp"
         android:background="@color/DarkCyan"/>
+    
+    <Button 
+        android:id="@+id/donate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/donate_button_text"
+        android:layout_below="@id/for_shelter"
+        android:layout_marginTop="30dp"
+        android:background="@color/DarkCyan"
+        android:onClick="donateToShelter"/>
     
 </RelativeLayout>

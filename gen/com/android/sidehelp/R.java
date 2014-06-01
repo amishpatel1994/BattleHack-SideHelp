@@ -16,6 +16,9 @@ public final class R {
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
     }
+    public static final class array {
+        public static final int gender_array=0x7f0c0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1232,29 +1235,41 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050040;
+        public static final int action_settings=0x7f05004c;
         public static final int activity_chooser_view_content=0x7f050025;
+        public static final int add_users_submit_button=0x7f050046;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
-        public static final int container=0x7f05003c;
+        public static final int container=0x7f050047;
+        public static final int dateOfBirthField=0x7f050040;
+        public static final int dateOfBirthText=0x7f050041;
         public static final int default_activity_button=0x7f050028;
+        public static final int descriptionField=0x7f050044;
+        public static final int descriptionText=0x7f050045;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
-        public static final int donate=0x7f05003f;
+        public static final int donate=0x7f05004a;
         public static final int dropdown=0x7f05000f;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
-        public static final int for_shelter=0x7f05003e;
+        public static final int firstNameField=0x7f05003c;
+        public static final int firstNameText=0x7f05003d;
+        public static final int for_shelter=0x7f050049;
+        public static final int for_temp=0x7f05004b;
+        public static final int genderDropDown=0x7f050043;
+        public static final int genderField=0x7f050042;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int intro=0x7f05003d;
+        public static final int intro=0x7f050048;
+        public static final int lastNameField=0x7f05003e;
+        public static final int lastNameText=0x7f05003f;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int middle=0x7f050012;
@@ -1337,13 +1352,16 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_donate=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_add_community_users=0x7f030018;
+        public static final int activity_donate=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
-        public static final int donate=0x7f0c0000;
-        public static final int main=0x7f0c0001;
+        public static final int add_community_users=0x7f0d0000;
+        public static final int community_home_page=0x7f0d0001;
+        public static final int donate=0x7f0d0002;
+        public static final int main=0x7f0d0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1389,9 +1407,11 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
         public static final int donate_button_text=0x7f0a0012;
+        public static final int gender_prompt=0x7f0a0015;
         public static final int hello_world=0x7f0a000e;
         public static final int into_text=0x7f0a0010;
         public static final int shelter_button_text=0x7f0a0011;
+        public static final int title_activity_add_community_users=0x7f0a0014;
         public static final int title_activity_donate=0x7f0a0013;
     }
     public static final class style {

@@ -55,6 +55,10 @@
             android:name="com.android.sidehelp.DonateActivity"
             android:label="@string/title_activity_donate" >
         </activity>
+        <activity
+            android:name="com.android.sidehelp.AddCommunityUsers"
+            android:label="@string/title_activity_add_community_users" >
+        </activity>
     </application>
 
 </manifest>

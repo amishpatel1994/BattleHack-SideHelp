@@ -17,15 +17,16 @@ import android.widget.TextView;
 public class AddCommunityUsers extends Activity {
 	static StringBuffer dateOfBirth;
     static TextView textView;
-    public static final String EXTRA_NAME = "com.android.sidehelp.AddCommunityUsers.FIRST_NAME";
- 
+    public static final String EXTRA_NAME = "com.android.sidehelp.AddCommunityUsers.NAME";
+    public static final String EXTRA_POSITION = "com.android.sidehelp.AddCommunityUsers.POSITION";
+    int indexPosition = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_community_users);
-		
-		
+		Intent userCommunicationIntent = getIntent();
+		indexPosition = userCommunicationIntent.getStringExtra(CommunityHomePage.EXTRA_POSTION);
 		
 	}
 	
@@ -77,6 +78,8 @@ public class AddCommunityUsers extends Activity {
 		StringBuffer str = new StringBuffer();
 		str.append(firstNameText.toString() + lastNameText.toString());
 		intent.putExtra(EXTRA_NAME, str.toString());
+		intent.putExtra(EXTRA_POSITION, indexPosition);
+		startActivity(intent);
 	}
 }
 

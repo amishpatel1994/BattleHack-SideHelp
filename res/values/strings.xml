@@ -8,5 +8,6 @@
     <string name="shelter_button_text">Manage Donations (For Shelter Only)</string>
     <string name="donate_button_text">Donate</string>
     <string name="title_activity_donate">DonateActivity</string>
+    <string name="title_activity_community_home_page">CommunityHomePage</string>
 
 </resources>

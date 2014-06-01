@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:padding="4dip"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    
+    
+    <LinearLayout 
+        	android:id="@+id/linearlayout"
+        	android:orientation="horizontal"
+            android:gravity="center" android:measureWithLargestChild="true"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp"
+            >
+        <Button android:id="@+id/goto_users"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Users"
+            >
+        </Button>
+        <Button android:id="@+id/goto_available_funds"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Available Funds"
+            >
+        </Button>
+        <Button android:id="@+id/goto_feed"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Feed">
+        </Button>
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_below="@id/linearlayout"
+            >
+    </android.support.v4.view.ViewPager>
+
+    
+   <!--   <Button 
+        android:id="@+id/home_page_find"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager"
+        android:text="Find"
+        android:layout_toLeftOf="@+id/home_page_create"
+        />
+    
+    <Button 
+        android:id="@id/home_page_create"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pager"
+        android:text="Create"
+        /> 
+        
+        -->
+    
+</RelativeLayout>

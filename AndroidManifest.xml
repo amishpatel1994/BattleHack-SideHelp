@@ -56,8 +56,13 @@
             android:label="@string/title_activity_donate" >
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.android.sidehelp.CommunityHomePage"
             android:label="@string/title_activity_community_home_page" >
+=======
+            android:name="com.android.sidehelp.AddCommunityUsers"
+            android:label="@string/title_activity_add_community_users" >
+>>>>>>> 70957f26c48930bbcf2e20152e92df67b6a589b8
         </activity>
     </application>
 

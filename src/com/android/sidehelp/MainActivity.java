@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	
+<<<<<<< HEAD
 		OnClickListener signInListener = new OnClickListener() {
 		    public void onClick(View v) {
 		      // do something when the button is clicked
@@ -27,6 +28,19 @@ public class MainActivity extends Activity {
 		};
 		Button signIn = (Button)findViewById(R.id.for_shelter);
 		signIn.setOnClickListener(signInListener);
+=======
+		Button createButton = (Button) findViewById(R.id.for_temp);
+		  OnClickListener createListener = new OnClickListener() {
+			    public void onClick(View v) {
+			      // do something when the button is clicked
+			    	 Intent secondIntent = new Intent(MainActivity.this, AddCommunityUsers.class);
+			    	startActivity(secondIntent);
+			    }
+			};
+			
+		createButton.setOnClickListener(createListener);
+
+>>>>>>> 70957f26c48930bbcf2e20152e92df67b6a589b8
 	}
 	
 	@Override
@@ -40,5 +54,12 @@ public class MainActivity extends Activity {
 		
 	}
 	
+//	//delete from here
+//	public void onTemp(View view) {
+//		Intent intent = new Intent(this, AddCommunityUsers.class);
+//		startActivity(intent);
+//	}
+	
+  
 	
 }

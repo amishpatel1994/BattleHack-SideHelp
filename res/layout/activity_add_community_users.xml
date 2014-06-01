@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView android:id="@+id/firstNameField"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="First Name: "/>
+	
+    <EditText android:id="@+id/firstNameText"
+        android:maxLines="1"
+        android:layout_below="@id/firstNameField"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"/>
+    
+     <TextView android:id="@+id/lastNameField"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/firstNameText"
+        android:text="Last Name: "/>
+	
+    <EditText android:id="@+id/lastNameText"
+        android:maxLines="1"
+        android:layout_below="@id/lastNameField"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"/>
+    
+    <TextView android:id="@+id/dateOfBirthField"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lastNameText"
+        android:text="Date of Birth(YYYY/MM/DD): "/>
+	
+    <EditText android:id="@+id/dateOfBirthText"
+        android:layout_below="@id/dateOfBirthField"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="displayDatePicker"/>
+    
+    <TextView android:id="@+id/genderField"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/dateOfBirthText"
+        android:text="Gender"/>
+    
+    <Spinner android:id="@+id/genderDropDown"
+        android:layout_below="@id/genderField"
+        android:layout_width="match_parent"
+        android:entries="@array/gender_array"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="10dp"
+        android:prompt="@string/gender_prompt" />"
+    
+    <TextView android:id="@+id/descriptionField"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/genderDropDown"
+        android:text="Description"/>
+    
+    <EditText android:id="@+id/descriptionText"
+        android:layout_below="@id/descriptionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/add_users_submit_button"
+        android:layout_below="@id/descriptionText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Submit"
+        android:layout_marginTop="30dp"
+        android:background="@color/DarkCyan"
+        android:onClick="onSubmit"/>"
+    
+</RelativeLayout>
